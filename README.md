@@ -114,7 +114,7 @@ LoraConfig(
 
 | Parameter | Value |
 |---|---|
-| Epochs | 3 |
+| Epochs | 5 |
 | Effective batch size | 16 (4 × 4 accumulation steps) |
 | Learning rate | 2e-4 |
 | LR scheduler | Cosine |
