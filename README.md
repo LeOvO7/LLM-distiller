@@ -75,8 +75,6 @@ Step 6  Visualize results (bar chart, per-keyword breakdown, score distribution)
 Step 7* Reverse Distillation — student teaches the LLM via few-shot injection
 ```
 
-\* Step 7 is an extra/bonus experiment.
-
 ---
 
 ## Dataset Generation
