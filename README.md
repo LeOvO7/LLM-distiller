@@ -23,7 +23,7 @@ A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a
 
 | Stage | Floq Keyword Hit Rate |
 |---|---|
-| Baseline (no training) | **4.2%** |
+| Baseline (no training) | **5.2%** |
 | After Distillation | **33.3%** |
 | Improvement | **+685.7%** |
 
