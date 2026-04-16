@@ -107,8 +107,8 @@ LoraConfig(
 ```
 
 - **Trainable parameters**: 17.6 M out of 511.6 M (3.44%)
-- **Training time**: ~34.5 seconds on A100
-- **Final training loss**: 0.5807
+- **Training time**: ~56.5 seconds on A100
+- **Final training loss**: 0.4454
 
 ### Training Hyperparameters
 
