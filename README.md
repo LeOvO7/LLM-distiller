@@ -10,7 +10,7 @@ A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a
 | Fictional Language | **Floq** — invented syntax with unique rules |
 | Teacher Model | OpenAI `gpt-4o-mini` |
 | Student Model | `Qwen/Qwen2.5-0.5B-Instruct` + LoRA |
-| Fine-tuning Method | LoRA (Low-Rank Adaptation) via `trl` / `peft` |
+| Fine-tuning Method | LoRA via `trl` / `peft` |
 | Environment | Google Colab (NVIDIA A100-SXM4-40GB) |
 
 ## Results
