@@ -24,8 +24,8 @@ A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a
 | Stage | Floq Keyword Hit Rate |
 |---|---|
 | Baseline (no training) | **5.2%** |
-| After Distillation | **33.3%** |
-| Improvement | **+685.7%** |
+| After Distillation | **31.2%** |
+| Improvement | **+505.9%** |
 
 A bonus **Reverse Distillation** experiment showed that injecting the student's outputs as few-shot examples into GPT-4o-mini raised its Floq hit rate from 5.5% → 33.2%, demonstrating bidirectional knowledge transfer.
 
