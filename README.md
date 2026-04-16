@@ -169,3 +169,5 @@ rouge-score
 | `floq_student_lora/` | Saved LoRA adapter weights |
 | `distillation_results.png` | Visualization charts |
 | `floq_distillation_results.zip` | All outputs packaged for download |
+
+[![Contributors](https://img.shields.io/github/contributors/owner/repo.svg)](https://github.com/owner/repo/graphs/contributors)
