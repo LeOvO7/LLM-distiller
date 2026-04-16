@@ -146,8 +146,8 @@ Teacher → (distillation) → Student → (few-shot injection) → Teacher (Flo
 
 | Condition | Score |
 |---|---|
-| GPT-4o-mini (no Floq knowledge) | 5.5% |
-| GPT-4o-mini (student few-shot injection) | 33.2% |
+| GPT-4o-mini (no Floq knowledge) | 1.8% |
+| GPT-4o-mini (student few-shot injection) | 27.3% |
 
 ---
 
