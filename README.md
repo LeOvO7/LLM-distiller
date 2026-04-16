@@ -9,12 +9,6 @@ A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a
   <img src="https://contrib.rocks/image?repo=LeOvO7/LLM-distiller" />
 </a>
 
-<p align="left">
-  <a href="https://github.com/LeOvO7">
-    <img src="https://github.com/LeOvO7.png?size=64" width="64" />
-  </a>
-</p>
-
 ## Overview
 
 | Component | Detail |
