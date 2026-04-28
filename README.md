@@ -1,5 +1,5 @@
 # LLM-distiller
-A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a large teacher LLM transfers knowledge of a made-up programming language to a tiny student model.
+A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a large model transfers knowledge of a made-up programming language to a tiny model.
 
 ## Contributors
 
