@@ -1,6 +1,12 @@
 # LLM-distiller
 A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a large teacher LLM transfers knowledge of a made-up programming language to a tiny student model.
 
+## Contributors
+
+<a href="https://github.com/LeOvO7/LLM-distiller/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=LeOvO7/LLM-distiller" />
+</a>
+
 ## Overview
 
 | Component | Detail |
