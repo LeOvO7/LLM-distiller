@@ -132,13 +132,6 @@ A score of 1.0 means the model used all 11 keywords in its answer. This metric d
 
 ---
 
-## Reverse Distillation (Step 7)
-
-After distillation, the student model generates 5 high-quality Floq Q&A examples. These are injected as few-shot context into the GPT-4o-mini system prompt, creating a loop where the small model teaches the large one:
-
-```
-Teacher → (distillation) → Student → (few-shot injection) → Teacher (Floq-aware)
-```
 
 | Condition | Score |
 |---|---|
