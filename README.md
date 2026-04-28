@@ -14,7 +14,6 @@ A demonstration of **offline SFT (Supervised Fine-Tuning) distillation** where a
 | Fictional Language | **Floq** — invented syntax with unique rules |
 | Teacher Model | OpenAI `gpt-4o-mini` |
 | Student Model | `Qwen/Qwen2.5-0.5B-Instruct` + LoRA |
-| Evaluation Model | Claude `claude-haiku-4-5-20251001` |
 | Fine-tuning Method | LoRA via `trl` / `peft` |
 | Evaluation | Floq Keyword Hit Rate + Claude LLM-as-Judge (`claude-haiku-4-5`) |
 | Environment | Google Colab (NVIDIA A100-SXM4-40GB) |
