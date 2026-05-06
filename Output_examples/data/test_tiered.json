@@ -1,1 +1,242 @@
-
+[
+  {
+    "instruction": "What keyword does Floq use to declare a variable?",
+    "output": "Floq uses the keyword `val` to declare a variable. The syntax is `val <name> := <value>`.",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "What keyword does Floq use instead of 'print' or 'console.log'?",
+    "output": "Floq uses the keyword `shout` instead of 'print' or 'console.log'.",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you write a comment in Floq?",
+    "output": "In Floq, you write a comment by using `##`. For example:\n\n```floq\n## This is a comment in Floq\nval x := 5  ## This comment explains the variable x\n```",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "What symbol does Floq use for list indexing instead of []?",
+    "output": "Floq uses the tilde symbol `~` for list indexing instead of brackets `[]`. For example, you can access the first element of a list `xs` using `xs~0`.",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "What are the four basic data types in Floq?",
+    "output": "The four basic data types in Floq are:\n\n1. num (numbers)\n2. str (strings)\n3. bool (true/false)\n4. list (list of values)",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you declare a variable named score with value 100 in Floq?",
+    "output": "```floq\nval score := 100\n```",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "What is the correct Floq syntax to print the string 'hello'?",
+    "output": "Here is the correct Floq syntax to print the string 'hello':\n\n```floq\nshout(\"hello\")\n```",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you concatenate the strings 'foo' and 'bar' in Floq?",
+    "output": "You can concatenate the strings 'foo' and 'bar' in Floq using the string concatenation operator `++`. Here's how you can do it:\n\n```floq\nval result := \"foo\" ++ \"bar\"\nshout(result)  ## printsfoobar\n```",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you access the first element of a list called items in Floq?",
+    "output": "You can access the first element of a list called `items` in Floq using the tilde `~` operator. Here is how you do it:\n\n```floq\nitems~0\n```",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you write a loop that runs exactly 5 times in Floq?",
+    "output": "You can write a loop that runs exactly 5 times in Floq using the `loop` keyword. Here is an example:\n\n```floq\nloop 5 times {\n  shout(\"This is iteration\")\n}\n``` \n\nThis code will print \"This is iteration\" five times.",
+    "tier": "easy",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that takes two numbers and returns their sum.",
+    "output": "```floq\n## Function to compute the sum of two numbers\nfn add(a, b) =>\n  a + b\n\n## Example usage\nval result := add(5, 3)\nshout(result)  ## prints 8\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that checks if a number is even and returns a bool.",
+    "output": "```floq\n## Check if a number is even\nfn is_even(n) =>\n  when n mod 2 == 0 { true } else { false }\n\n## Example usage\nval result := is_even(4)\nshout(result)  ## prints true\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that declares a list of three numbers and prints the second element.",
+    "output": "```floq\n## Declare a list of three numbers\nval numbers := [5, 10, 15]\n\n## Print the second element\nshout(numbers~1)  ## prints 10\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How do you write a conditional in Floq that prints 'positive' when x > 0 and 'non-positive' otherwise?",
+    "output": "Here is how you can write a conditional in Floq to print 'positive' when `x > 0` and 'non-positive' otherwise:\n\n```floq\nval x := 5  ## you can change this value to test other cases\nwhen x > 0 { shout(\"positive\") } else { shout(\"non-positive\") }\n``` \n\nReplace `5` with any number to test different conditions.",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function named greet that takes a name (str) and prints a greeting using string concatenation.",
+    "output": "```floq\n## Function to greet a person\nfn greet(name) =>\n  val greeting := \"Hello, \" ++ name ++ \"!\"\n  shout(greeting)\n\n## Example usage\ngreet(\"Alice\")  ## prints Hello, Alice!\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that loops 3 times and prints 'hi' each time.",
+    "output": "```floq\nloop 3 times {\n  shout(\"hi\")\n}\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that returns the larger of two numbers.",
+    "output": "```floq\n## Function to return the larger of two numbers\nfn larger(a, b) =>\n  when a > b { a } else { b }\n\n## Example usage\nval result := larger(10, 20)\nshout(result)  ## prints 20\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that declares a variable, doubles it inside a function, and prints the result.",
+    "output": "```floq\n## Function to double a number\nfn double(n) =>\n  n * 2\n\nval number := 7\nval doubledResult := double(number)\nshout(doubledResult)  ## prints 14\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "How does Floq's function return value work? Show an example that returns the square of a number.",
+    "output": "In Floq, the return value of a function is determined by the last expression in the body of the function. It is returned automatically without needing a specific return statement.\n\nHere is an example of a function that calculates the square of a number:\n\n```floq\n## Function to compute the square of a number\nfn square(n) =>\n  n * n  ## the last expression, n * n, is returned automatically\n\nval result := square(4)  ## calls the function with 4\nshout(result)            ## prints 16\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that stores three strings in a list and prints each one using its index.",
+    "output": "```floq\n## Store strings in a list\nval strings := [\"First\", \"Second\", \"Third\"]\n\n## Print each string using its index\nshout(strings~0)   ## prints First\nshout(strings~1)   ## prints Second\nshout(strings~2)   ## prints Third\n```",
+    "tier": "medium",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a recursive Floq function to compute the factorial of n.",
+    "output": "```floq\n## Compute factorial\nfn factorial(n) =>\n  when n <= 1 { 1 } else { n * factorial(n - 1) }\n\n## Example usage\nval result := factorial(5)\nshout(result)  ## prints 120\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that computes the nth Fibonacci number recursively.",
+    "output": "```floq\n## Compute Fibonacci recursively\nfn fibonacci(n) =>\n  when n <= 1 { n } else { fibonacci(n - 1) + fibonacci(n - 2) }\n\nval result := fibonacci(10)  ## Change the argument to compute a different Fibonacci number\nshout(result)  ## prints 55\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a complete Floq program that defines a function to find the maximum of three numbers and calls it.",
+    "output": "```floq\n## Function to find the maximum of three numbers\nfn max_of_three(a, b, c) =>\n  when a >= b and a >= c { a } \n  else when b >= a and b >= c { b } \n  else { c }\n\n## Calling the function with three numbers\nval result := max_of_three(15, 25, 10)\nshout(result)  ## prints 25\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that uses a loop to compute the sum of numbers from 1 to 10 and prints the result.",
+    "output": "```floq\n## Compute the sum of numbers from 1 to 10\nval sum := 0\nloop 10 times {\n  sum := sum + (loop_index + 1)  ## loop_index starts from 0\n}\nshout(sum)  ## prints 55\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that takes a list of three numbers and returns the largest using nested when expressions.",
+    "output": "```floq\n## Function to find the largest of three numbers\nfn largestOfThree(nums) =>\n  when nums~0 >= nums~1 {\n    when nums~0 >= nums~2 {\n      nums~0\n    } else {\n      nums~2\n    }\n  } else {\n    when nums~1 >= nums~2 {\n      nums~1\n    } else {\n      nums~2\n    }\n  \n\n## Example usage\nval numbers := [5, 10, 3]\nval largest := largestOfThree(numbers)\nshout(largest)  ## prints 10\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that defines two functions: one to double a number and one to add two numbers, then composes them.",
+    "output": "```floq\n## Function to double a number\nfn double(n) =>\n  n * 2\n\n## Function to add two numbers\nfn add(a, b) =>\n  a + b\n\n## Composing the functions\nval number := 3\nval doubled := double(number)\nval result := add(doubled, number)\n\nshout(result)  ## prints 9 (3 doubled is 6, and 6 + 3 gives 9)\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that uses a conditional inside a loop to count how many times to shout 'fizz' for multiples of 3 (loop 15 times).",
+    "output": "```floq\n## Count and shout 'fizz' for multiples of 3\nfn countFizz() =>\n  val count := 0\n  loop 15 times {\n    when (count + 1) % 3 == 0 { \n      shout(\"fizz\") \n    }\n    count := count + 1\n  }\n\ncountFizz()  ## Call the function\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a complete Floq program: declare a greeting template as a string, define a personalise function that appends a name, and call it twice with different names.",
+    "output": "```floq\n## Greeting template\nval greetingTemplate := \"Hello, \" ++ \"<name>!\"\n\n## Personalise function\nfn personalise(name) =>\n  greetingTemplate ++ \" \" ++ name\n\n## Call the function with different names\nval greeting1 := personalise(\"Alice\")\nval greeting2 := personalise(\"Bob\")\n\nshout(greeting1)  ## prints Hello, <name>! Alice\nshout(greeting2)  ## prints Hello, <name>! Bob\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq function that checks whether a given number n is prime by trial division (assume n < 20). Use nested when expressions.",
+    "output": "```floq\n## Function to check if a number is prime\nfn is_prime(n) =>\n  when n < 2 { false } else {\n    val is_divisible := false\n    loop i from 2 to n - 1 {\n      when n % i == 0 { is_divisible := true }\n    }\n    when is_divisible { false } else { true }\n  }\n\n## Testing the function\nval result := is_prime(13)\nshout(result)  ## prints true\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Write a Floq program that defines a higher-order style pattern: a function apply that takes a number and applies double to it, where double is defined separately.",
+    "output": "```floq\n## Function to double a number\nfn double(x) =>\n  x * 2\n\n## Higher-order function that applies a given function to a number\nfn apply(func, num) =>\n  func(num)\n\n## Testing the apply function with double\nval result := apply(double, 5)\nshout(result)  ## prints 10\n```",
+    "tier": "hard",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Translate this Python code to Floq:\n```python\ndef square(n):\n    return n * n\nprint(square(7))\n```",
+    "output": "Here is the translation of the Python code to Floq:\n\n```floq\n## Function to compute square of a number\nfn square(n) =>\n  n * n\n\nshout(square(7))  ## prints 49\n```",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Translate this Python code to Floq:\n```python\nx = [1, 2, 3]\nprint(x[0])\n```",
+    "output": "```floq\nval x := [1, 2, 3]\nshout(x~0)  ## prints 1\n```",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Translate this JavaScript to Floq:\n```javascript\nlet name = 'Alice';\nconsole.log('Hello, ' + name);\n```",
+    "output": "```floq\nval name := \"Alice\"\nshout(\"Hello, \" ++ name)\n```",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Find and fix all the errors in this Floq code:\n```\nlet x = 10\nprint(x)\n```",
+    "output": "Here is the corrected Floq code:\n\n```floq\nval x := 10\nshout(x)\n``` \n\n### Changes made:\n1. Changed `let` to `val` for variable declaration.\n2. Changed `print` to `shout` for output.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Find and fix all the errors in this Floq code:\n```\nfn add(a b) = a + b\nshout(add(3 4))\n```",
+    "output": "Here is the corrected Floq code with proper syntax:\n\n```floq\nfn add(a, b) => a + b\nshout(add(3, 4))\n```\n\n### Changes Made:\n1. Added a comma between parameters `a` and `b` in the function definition.\n2. Changed `=` to `=>` in the function definition to follow the correct syntax.\n3. Also added a comma between the arguments `3` and `4` when calling the `add` function.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Is this valid Floq? Explain every mistake:\n```\nval xs := [1, 2, 3]\nshout(xs[1])\n```",
+    "output": "The provided code snippet has one mistake in the way list indexing is used. Here’s the analysis:\n\n1. **List Indexing Syntax**: In Floq, list indexing uses the tilde `~` instead of brackets `[]`. Therefore, `xs[1]` is incorrect. It should be `xs~1`.\n\nHere’s the corrected version of the code snippet:\n\n```floq\nval xs := [1, 2, 3]\nshout(xs~1)\n```\n\nWith this correction, the code will correctly output the second element of the list `xs`, which is `2`.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Explain in one paragraph how Floq differs from Python in at least three specific ways.",
+    "output": "Floq differs from Python in several key ways: first, Floq uses a unique syntax for variable declaration with `val <name> := <value>`, whereas Python uses `=<value>`. Second, Floq employs a distinct `fn <name>(<params>) => <body>` notation for function definitions, contrasting with Python's `def <name>(<params>): <body>`. Third, Floq incorporates a built-in conditional syntax that explicitly uses `when <cond> { <then> } else { <else> }`, while Python uses `if <cond>: <then> else: <else>`. Additionally, Floq relies on a specific syntax for lists and employs a distinct string concatenation operator (`++`), further differentiating it from Python's list and string handling conventions.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "A colleague says 'Floq looks just like Python with different keywords.' List three structural differences that prove them wrong.",
+    "output": "Here are three structural differences between Floq and Python that demonstrate they are not the same, despite any superficial similarities:\n\n1. **Variable Declaration**: \n   - In Floq, variables are declared using the `val` keyword, followed by a name and an assignment (`:=`), such as `val x := 10`.\n   - In Python, variables are assigned directly without a specific declaration keyword, like `x = 10`.\n\n2. **Function Definition**: \n   - Floq uses the `fn` keyword to define functions, followed by the function name, parameters in parentheses, and an arrow (`=>`) leading to the body, such as `fn add(a, b) => a + b`.\n   - In Python, functions are defined using the `def` keyword, followed by the function name and parameters with a colon (`:`), like `def add(a, b): return a + b`.\n\n3. **Conditional Statements**: \n   - Floq employs a unique syntax for conditionals using the `when` keyword, such as `when condition { <then> } else { <else> }`.\n   - Python uses `if`, `elif`, and `else` keywords with colons and indentation to structure conditional statements, like:\n     ```python\n     if condition:\n         <then>\n     else:\n         <else>\n     ```\n\nThese differences highlight the distinct structural features of Floq compared to Python.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "Design a small Floq program (at least 5 lines) that solves a problem of your choice. Explain what it does.",
+    "output": "Here is a Floq program that calculates the sum of all even numbers in a given list.\n\n```floq\n## Function to check if a number is even\nfn is_even(n) =>\n  when n % 2 == 0 { true } else { false }\n\n## Function to sum all even numbers in a list\nfn sum_even(nums) =>\n  val total := 0\n  loop nums~0 times {\n    when is_even(nums~0) { total := total + nums~0 }\n  }\n  total\n\n## List of numbers\nval numbers := [1, 2, 3, 4, 5, 6]\n\n## Calculate the sum of even numbers and print the result\nval result := sum_even(numbers)\nshout(result)  ## prints 12\n```\n\n### Explanation:\n1. **is_even function**: This function takes a number `n` and returns `true` if it is even (i.e., divisible by 2 without a remainder), and `false` otherwise.\n2. **sum_even function**: This function takes a list of numbers and initializes a variable `total` to 0. It uses a loop to iterate through each number in the list and checks if it is even using the `is_even` function. If a number is even, it adds that number to the `total`.\n3. **numbers list**: A predefined list of integers from 1 to 6.\n4. **Calculating the result**: The program calls the `sum_even` function with the `numbers` list and stores the result in the `result` variable.\n5. **Output**: Finally, it prints the result, which is the sum of all even numbers in the list, resulting in an output of 12.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  },
+  {
+    "instruction": "What would happen if someone tried to use Python's def keyword in a Floq program? Explain the correct Floq equivalent.",
+    "output": "In Floq, using Python's `def` keyword would result in a syntax error, as Floq has its own specific syntax for defining functions. The Floq equivalent uses the `fn` keyword instead of `def`.\n\nFor example, if someone attempted to define a function in Floq using Python's syntax:\n\n```python\ndef add(a, b):\n    return a + b\n```\n\nThey would need to use the correct Floq syntax as follows:\n\n```floq\nfn add(a, b) =>\n  a + b  ## last expression is returned automatically\n```\n\nIn this correct Floq version, the `fn` keyword is used to define the function, and the function body is enclosed with `=>`. The return value is automatically the last expression evaluated in the function body, so there's no need for an explicit `return` statement.",
+    "tier": "ood",
+    "source": "teacher_gpt-4o-mini"
+  }
+]
